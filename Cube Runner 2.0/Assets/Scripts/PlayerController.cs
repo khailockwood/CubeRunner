@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -29,7 +30,8 @@ public class PlayerController : MonoBehaviour {
 			speed = 0;
 			turn_speed = 0;
 			GameManager.instance.alive = false;
-			//print("hit");
+            //print("hit");
+            SceneManager.LoadScene("level");
 		}
 	}
 
